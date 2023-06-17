@@ -115,5 +115,14 @@ $(function () {
     $('.testimonials__slider-next').on('click', function (e) {
         e.preventDefault()
         $('.testimonials__slider').slick('slickNext')
-    })
+    });
+    // --------------------------------------------------------------------------------------
+    $(".price-btns").on("click", function (e) {
+        e.preventDefault()
+        var id = $(this).attr('href');
+        var targetElement = $(id);
+        var padding = 140;
+        var top = targetElement.offset().top - padding;
+        $('body,html').animate({ scrollTop: top }, 800)
+    });
 });
