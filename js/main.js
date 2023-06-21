@@ -1,20 +1,45 @@
+// var blocks = document.getElementsByClassName("card__box-item");
+
+// for (var i = 0; i < blocks.length; i++) {
+//     blocks[i].addEventListener("click", function() {
+
+//     for (var j = 0; j < blocks.length; j++) {
+//         blocks[j].classList.remove("active");
+//     }
+
+//     this.classList.add("active");
+//     });
+// }
+
+// blocks[1].classList.add("active");
+// =======================================================================
 var blocks = document.getElementsByClassName("card__box-item");
 
-// Add a click event listener to each block
-for (var i = 0; i < blocks.length; i++) {
-    blocks[i].addEventListener("click", function() {
-    // Remove the active class from all blocks
+var activateBlock = function() {
     for (var j = 0; j < blocks.length; j++) {
         blocks[j].classList.remove("active");
     }
-    // Add the active class to the clicked block
     this.classList.add("active");
-    });
+};
+
+for (var i = 0; i < blocks.length; i++) {
+    blocks[i].addEventListener("mouseenter", activateBlock);
+    blocks[i].addEventListener("click", activateBlock);
 }
 
-// Select the first block by default
 blocks[1].classList.add("active");
+const hover = document.querySelectorAll('.bt');
 
+hover.forEach((hov, index) =>{
+    hov.addEventListener('mouseenter', () =>{
+        console.log(index)
+    const divv = document.querySelectorAll('.box-hover')
+    divv.forEach(divs =>{
+        divs.classList.remove('active')
+    });
+    divv[index].classList.add('active');
+    });
+});
 // =-=--------------------------------------------------------------------
 const bus = 6;
 const buss = 12;
