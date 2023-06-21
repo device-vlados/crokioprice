@@ -1506,6 +1506,14 @@ p {
   .inclusive__btn-box {
     bottom: -150px;
   }
+  .inclusive__button {
+    white-space: nowrap;
+    width: 300px;
+  }
+  .inclusive__buttons {
+    white-space: nowrap;
+    width: 300px;
+  }
   .inclusive__btn {
     margin-top: 18px;
     width: 300px;
