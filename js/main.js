@@ -14,8 +14,90 @@ for (var i = 0; i < blocks.length; i++) {
 
 // Select the first block by default
 blocks[1].classList.add("active");
-// ---------------------------------------------------------------
 
+// =-=--------------------------------------------------------------------
+const bus = 6;
+const buss = 12;
+const busi = 1999;
+const com = 2999;
+
+const business = 10499;
+const busines = 18199;
+const commerc = 15899;
+const commer = 27499;
+// ---------------------------COMMERCE---------------------------------
+function comfirstPrice() {
+    var priceElement = document.getElementById("price");
+    var priceElement2 = document.getElementById("prices");
+
+    var multipliedPrice = busi * 1;
+    var multipliedPrice2 = busi * 1;
+
+    priceElement.textContent = "$" + multipliedPrice.toFixed(0);
+    priceElement2.textContent = "$" + multipliedPrice2.toFixed(0);
+};
+function comPrice() {
+    var priceElement = document.getElementById("price");
+    var priceElement2 = document.getElementById("prices");
+
+    var multipliedPrice = commerc * bus;
+    var multipliedPrice2 = commerc * 1;
+
+    priceElement.textContent = "$" + multipliedPrice.toFixed(0);
+    priceElement2.textContent = "$" + multipliedPrice2.toFixed(0);
+};
+function comsPrice() {
+    var priceElement = document.getElementById("price");
+    var priceElement2 = document.getElementById("prices");
+
+    var multipliedPrice = commer * buss;
+    var multipliedPrice2 = commer * 1;
+
+    priceElement.textContent = "$" + multipliedPrice.toFixed(0);
+    priceElement2.textContent = "$" + multipliedPrice2.toFixed(0);
+};
+// ---------------------------BUSINESS---------------------------------
+function busfirstPrice() {
+    var priceElement = document.getElementById("price");
+    var priceElement2 = document.getElementById("prices");
+
+    var multipliedPrice = com * 1;
+    var multipliedPrice2 = com * 1;
+
+    priceElement.textContent = "$" + multipliedPrice.toFixed(0);
+    priceElement2.textContent = "$" + multipliedPrice2.toFixed(0);
+};
+function businessPrice() {
+    var priceElement = document.getElementById("price");
+    var priceElement2 = document.getElementById("prices");
+
+    var multipliedPrice = business * bus;
+    var multipliedPrice2 = business * 1;
+
+    priceElement.textContent = "$" + multipliedPrice.toFixed(0);
+    priceElement2.textContent = "$" + multipliedPrice2.toFixed(0);
+};
+function businesPrice() {
+    var priceElement = document.getElementById("price");
+    var priceElement2 = document.getElementById("prices");
+
+    var multipliedPrice = busines * buss;
+    var multipliedPrice2 = busines * 1;
+
+    priceElement.textContent = "$" + multipliedPrice.toFixed(0);
+    priceElement2.textContent = "$" + multipliedPrice2.toFixed(0);
+};
+// ---------------------------CUSTOM---------------------------------
+function customPrice() {
+    var priceElement = document.getElementById("price");
+    var priceElement2 = document.getElementById("prices");
+
+    var multipliedPrice = "$custom";
+    var multipliedPrice2 = "$custom";
+
+    priceElement.textContent = multipliedPrice;
+    priceElement2.textContent = multipliedPrice2;
+};
 // ---------------------------------------------------------------
 const btns = document.querySelectorAll('.price-btns');
 const oneActiveBtn = document.querySelector('.return');
@@ -71,7 +153,135 @@ oneActiveBts.addEventListener('click', (event) => {
     divs[1].classList.add('active');
     activeIndex = 1;
 });
+// -------------------------------HUI------------------------------------------
+document.addEventListener('DOMContentLoaded', function() {
+    var toggleButton = document.getElementById('acc-btn');
+    var hiddenText = document.getElementById('inclusive-acc');
+    var isOpen = false;
+
+    toggleButton.addEventListener('click', function() {
+        if (!isOpen) {
+            hiddenText.style.display = 'block';
+            isOpen = true;
+        } else {
+            hiddenText.style.display = 'none';
+            isOpen = false;
+        }
+    });
+});
 // ----------------------------------------------------------------------------
+document.addEventListener('DOMContentLoaded', function() {
+    var toggleButton = document.getElementById('acc-btns');
+    var hiddenText = document.getElementById('inclusive-accs');
+    var isOpen = false;
+
+    toggleButton.addEventListener('click', function() {
+        if (!isOpen) {
+            hiddenText.style.display = 'block';
+            isOpen = true;
+        } else {
+            hiddenText.style.display = 'none';
+            isOpen = false;
+        }
+    });
+});
+// ----------------------------------------------------------------------------
+document.addEventListener('DOMContentLoaded', function() {
+    var toggleButton = document.getElementById('acc-bt');
+    var hiddenText = document.getElementById('inclusive-ac');
+    var isOpen = false;
+
+    toggleButton.addEventListener('click', function() {
+        if (!isOpen) {
+            hiddenText.style.display = 'block';
+            isOpen = true;
+        } else {
+            hiddenText.style.display = 'none';
+            isOpen = false;
+        }
+    });
+});
+// ----------------------------------------------------------------------------
+document.addEventListener('DOMContentLoaded', function() {
+    var toggleButton = document.getElementById('ac-btn');
+    var hiddenText = document.getElementById('first-acc');
+    var isOpen = false;
+
+    toggleButton.addEventListener('click', function() {
+        if (!isOpen) {
+            hiddenText.style.display = 'block';
+            isOpen = true;
+        } else {
+            hiddenText.style.display = 'none';
+            isOpen = false;
+        }
+    });
+});
+// ----------------------------------------------------------------------------
+document.addEventListener('DOMContentLoaded', function() {
+    var toggleButton = document.getElementById('accs-btn');
+    var hiddenText = document.getElementById('inclusive-accs');
+    var isOpen = false;
+
+    toggleButton.addEventListener('click', function() {
+        if (!isOpen) {
+            hiddenText.style.display = 'block';
+            isOpen = true;
+        } else {
+            hiddenText.style.display = 'none';
+            isOpen = false;
+        }
+    });
+});
+// ----------------------------------------------------------------------------
+document.addEventListener('DOMContentLoaded', function() {
+    var toggleButton = document.getElementById('acc-btn-last');
+    var hiddenText = document.getElementById('inclusive-acc-last');
+    var isOpen = false;
+
+    toggleButton.addEventListener('click', function() {
+        if (!isOpen) {
+            hiddenText.style.display = 'block';
+            isOpen = true;
+        } else {
+            hiddenText.style.display = 'none';
+            isOpen = false;
+        }
+    });
+});
+// ----------------------------------------------------------------------------
+document.addEventListener('DOMContentLoaded', function() {
+    var toggleButton = document.getElementById('acc-btn-pink');
+    var hiddenText = document.getElementById('inclusive-acc-pink');
+    var isOpen = false;
+
+    toggleButton.addEventListener('click', function() {
+        if (!isOpen) {
+            hiddenText.style.display = 'block';
+            isOpen = true;
+        } else {
+            hiddenText.style.display = 'none';
+            isOpen = false;
+        }
+    });
+});
+// ----------------------------------------------------------------------------
+document.addEventListener('DOMContentLoaded', function() {
+    var toggleButton = document.getElementById('acc-btn-second');
+    var hiddenText = document.getElementById('second-acc');
+    var isOpen = false;
+
+    toggleButton.addEventListener('click', function() {
+        if (!isOpen) {
+            hiddenText.style.display = 'block';
+            isOpen = true;
+        } else {
+            hiddenText.style.display = 'none';
+            isOpen = false;
+        }
+    });
+});
+
 $(function () {
     // -----------------------------------------------------------------------------
     $('.grow__acc-link').on('click', function (e) {
@@ -100,6 +310,7 @@ $(function () {
             $(this).children('.faq__acc-text').slideDown()
         }
     });
+    // -----------------------------------------------------------------------------
     // SLIDER1
     $('.testimonials__slider').slick({
         slidesToShow: 1,
@@ -117,7 +328,7 @@ $(function () {
         $('.testimonials__slider').slick('slickNext')
     });
     // --------------------------------------------------------------------------------------
-    $(".price-btns").on("click", function (e) {
+    $(".price-btns, .inclusive__btns, .inclusive__btn, .insclusive__button, .returns, .returs").on("click", function (e) {
         e.preventDefault()
         var id = $(this).attr('href');
         var targetElement = $(id);

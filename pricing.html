@@ -52,7 +52,7 @@
                             <p class="pricing__heading-text">Choose the nature of your business or the type of industry you are involved in?</p>
                         </div>
                         <div class="card__box">
-                            <button class="card__box-item price-btns" href="#business">
+                            <button class="card__box-item price-btns" id='' href="#business" onclick="busfirstPrice()">
                                 <div class="card__box-content">
                                     <h2 class="card__box-title">
                                         <span></span>
@@ -61,7 +61,7 @@
                                     <p class="card__box-text">Package is tailored for businesses looking to sell products or services online. It includes all the features of the Business Package, along with additional e-commerce-specific functionalities.</p>
                                 </div>
                             </button>
-                            <button class="card__box-item price-btns active" href="#commerce">
+                            <button class="card__box-item price-btns active" href="#commerce" onclick="comfirstPrice()">
                                 <div class="card__box-content">
                                     <h2 class="card__box-title">
                                         <span></span>
@@ -70,7 +70,7 @@
                                     <p class="card__box-text">The Business Package is designed to cater to small and medium-sized businesses. It includes essential web development and marketing services to establish a strong online presence.</p>
                                 </div>
                             </button>
-                            <button class="card__box-item price-btns" href="#custom">
+                            <button class="card__box-item price-btns" href="#custom" onclick="customPrice()">
                                 <div class="card__box-content">
                                     <h2 class="card__box-title">
                                         <span></span>
@@ -95,7 +95,7 @@
                                 <div class="inclusive__box-content">
                                     <div class="inclusive__heading">
                                         <h2 class="inclusive__heading-title">All Inclusive in E-Commerce Package</h2>
-                                        <p class="inclusive__heading-text">The E-Commerce Package primarily caters to entrepreneurs and businesses in various industries, including startups, local businesses, and professional service providers. For those who seek to ensure a strong online and offline presence, attract their target audience and stimulate business growth through effective web development and marketing strategies.</p>
+                                        <p class="inclusive__heading-text">The e-commerce package is designed for businesses of any size who want to sell goods or services online and who need a comprehensive solution to create an efficient and secure online store, manage inventory, process orders, optimize conversion rates and develop their e-commerce business.</p>
                                     </div>
                                     <div class="inclusive__info">
                                         <ul class="inclusive__info-list">
@@ -133,6 +133,45 @@
                                                 Pause or Cancel Anytime</li>
                                         </ul>
                                     </div>
+                                    <div class="inclusive__info-acc">
+                                        <button class="inclusive__acc-btn btn" id="acc-btn">What's included?</button>
+                                        <div id="inclusive-acc">
+                                            <ul class="inclusive__acc">
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/servi/sun.png" alt="">
+                                                    Strategy and Management</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/servi/sun.png" alt="">
+                                                    Website Design and Development</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/servi/sun.png" alt="">
+                                                    Software Development</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/servi/sun.png" alt="">
+                                                    CMS & SEO</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/servi/sun.png" alt="">
+                                                    Personal Manager</li>
+                                            </ul>
+                                            <ul class="inclusive__acc acc-sec">
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/header/star.png" alt="">
+                                                    Digital Marketing</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/header/star.png" alt="">
+                                                    Online & Offline Advertising</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/header/star.png" alt="">
+                                                    Graphic Design</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/header/star.png" alt="">
+                                                    Weekly Analytics and Reporting</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/header/star.png" alt="">
+                                                    Pause or Cancel Anytime</li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="inclusive__box-price">
                                     <h1 class="inclusive__price-title">$2999/m</h1>
@@ -140,7 +179,7 @@
                                     <p class="inclusive__price-text">100% Satisfaction Guarantee</p>
                                 </div>
                             </div>
-                            <button class="inclusive__button price-btns button">Need a discount?</button>
+                            <button class="inclusive__button price-btns button" href="#bus__disc-first" onclick="comPrice()">Need an additional discount?</button>
                         </div>
                         <div class="inclusive__box box-two active" id="commerce">
                             <div class="inclusive__box-img">
@@ -189,6 +228,45 @@
                                                 Pause or Cancel Anytime</li>
                                         </ul>
                                     </div>
+                                    <div class="inclusive__info-acc">
+                                        <button class="inclusive__acc-btn btn" id="acc-btns">What's included?</button>
+                                        <div id="inclusive-accs">
+                                            <ul class="inclusive__acc">
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/servi/sun.png" alt="">
+                                                    Strategy and Management</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/servi/sun.png" alt="">
+                                                    Website Design and Development</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/servi/sun.png" alt="">
+                                                    Software Development</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/servi/sun.png" alt="">
+                                                    CMS & SEO</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/servi/sun.png" alt="">
+                                                    Personal Manager</li>
+                                            </ul>
+                                            <ul class="inclusive__acc acc-sec">
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/header/star.png" alt="">
+                                                    Digital Marketing</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/header/star.png" alt="">
+                                                    Online & Offline Advertising</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/header/star.png" alt="">
+                                                    Graphic Design</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/header/star.png" alt="">
+                                                    Weekly Analytics and Reporting</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/header/star.png" alt="">
+                                                    Pause or Cancel Anytime</li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="inclusive__box-price">
                                     <h1 class="inclusive__price-title">$1999/m</h1>
@@ -196,7 +274,7 @@
                                     <p class="inclusive__price-text">100% Satisfaction Guarantee</p>
                                 </div>
                             </div>
-                            <button class="inclusive__button price-btns button">Need a discount?</button>
+                            <button class="inclusive__button price-btns button" href="#com__disc-first" onclick="businessPrice()">Need an additional discount?</button>
                         </div>
                         <div class="inclusive__box box-three" id="custom">
                             <div class="inclusive__box-img">
@@ -207,7 +285,7 @@
                                 <div class="inclusive__box-content">
                                     <div class="inclusive__heading">
                                         <h2 class="inclusive__heading-title">All Inclusive in Custom Package</h2>
-                                        <p class="inclusive__heading-text">The Business Package primarily caters to entrepreneurs and businesses in various industries, including startups, local businesses, and professional service providers. For those who seek to ensure a strong online and offline presence, attract their target audience and stimulate business growth through effective web development and marketing strategies.</p>
+                                        <p class="inclusive__heading-text">The Custom package is designed for companies with unique requirements or complex projects that need customized solutions for web development, advanced functionality, and specialized integrations to meet their needs and goals.</p>
                                     </div>
                                     <div class="inclusive__info">
                                         <ul class="inclusive__info-list">
@@ -245,8 +323,47 @@
                                                 Pause or Cancel Anytime</li>
                                         </ul>
                                     </div>
+                                    <div class="inclusive__info-acc">
+                                        <button class="inclusive__acc-btn btn" id="acc-bt">What's included?</button>
+                                        <div id="inclusive-ac">
+                                            <ul class="inclusive__acc">
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/servi/sun.png" alt="">
+                                                    Strategy and Management</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/servi/sun.png" alt="">
+                                                    Website Design and Development</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/servi/sun.png" alt="">
+                                                    Software Development</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/servi/sun.png" alt="">
+                                                    CMS & SEO</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/servi/sun.png" alt="">
+                                                    Personal Manager</li>
+                                            </ul>
+                                            <ul class="inclusive__acc acc-sec">
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/header/star.png" alt="">
+                                                    Digital Marketing</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/header/star.png" alt="">
+                                                    Online & Offline Advertising</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/header/star.png" alt="">
+                                                    Graphic Design</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/header/star.png" alt="">
+                                                    Weekly Analytics and Reporting</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/header/star.png" alt="">
+                                                    Pause or Cancel Anytime</li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="inclusive__box-price">
+                                <div class="inclusive__box-price custom-price">
                                     <h1 class="inclusive__price-title">Custom</h1>
                                     <button class="inclusive__price-btn button">Subscribe Now</button>
                                     <p class="inclusive__price-text">100% Satisfaction Guarantee</p>
@@ -262,7 +379,7 @@
                                 <div class="inclusive__box-content">
                                     <div class="inclusive__heading">
                                         <h2 class="inclusive__heading-title">All Inclusive in E-Commerce Package</h2>
-                                        <p class="inclusive__heading-text">The E-Commerce Package primarily caters to entrepreneurs and businesses in various industries, including startups, local businesses, and professional service providers. For those who seek to ensure a strong online and offline presence, attract their target audience and stimulate business growth through effective web development and marketing strategies.</p>
+                                        <p class="inclusive__heading-text">The e-commerce package is designed for businesses of any size who want to sell goods or services online and who need a comprehensive solution to create an efficient and secure online store, manage inventory, process orders, optimize conversion rates and develop their e-commerce business.</p>
                                     </div>
                                     <div class="inclusive__info">
                                         <ul class="inclusive__info-list">
@@ -300,6 +417,45 @@
                                                 Pause or Cancel Anytime</li>
                                         </ul>
                                     </div>
+                                    <div class="inclusive__info-acc">
+                                        <button class="inclusive__acc-btn btn" id="ac-btn">What's included?</button>
+                                        <div id="first-acc">
+                                            <ul class="inclusive__acc">
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/servi/sun.png" alt="">
+                                                    Strategy and Management</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/servi/sun.png" alt="">
+                                                    Website Design and Development</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/servi/sun.png" alt="">
+                                                    Software Development</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/servi/sun.png" alt="">
+                                                    CMS & SEO</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/servi/sun.png" alt="">
+                                                    Personal Manager</li>
+                                            </ul>
+                                            <ul class="inclusive__acc acc-sec">
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/header/star.png" alt="">
+                                                    Digital Marketing</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/header/star.png" alt="">
+                                                    Online & Offline Advertising</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/header/star.png" alt="">
+                                                    Graphic Design</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/header/star.png" alt="">
+                                                    Weekly Analytics and Reporting</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/header/star.png" alt="">
+                                                    Pause or Cancel Anytime</li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="inclusive__box-price">
                                     <h2 class="inclusive__price-sale">12% off</h2>
@@ -309,8 +465,8 @@
                                 </div>
                             </div>
                             <div class="inclusive__btn-box">
-                                <button class="inclusive__btn price-btns button">Need a discount?</button>
-                                <button class="inclusive__btns button return" href="#">Return to monthly subscription</button>
+                                <button class="inclusive__btns button return" href="#business" onclick="comfirstPrice()">Return to monthly subscription</button>
+                                <button class="inclusive__btn price-btns button" href="#bus__disc-second" onclick="comsPrice()">Need an additional discount?</button>
                             </div>
                         </div>
                         <div class="inclusive__box box-seven" id="com__disc-first">
@@ -360,6 +516,45 @@
                                                 Pause or Cancel Anytime</li>
                                         </ul>
                                     </div>
+                                    <div class="inclusive__info-acc">
+                                        <button class="inclusive__acc-btn btn" id="acc-btn-pink">What's included?</button>
+                                        <div id="inclusive-acc-pink">
+                                            <ul class="inclusive__acc">
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/servi/sun.png" alt="">
+                                                    Strategy and Management</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/servi/sun.png" alt="">
+                                                    Website Design and Development</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/servi/sun.png" alt="">
+                                                    Software Development</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/servi/sun.png" alt="">
+                                                    CMS & SEO</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/servi/sun.png" alt="">
+                                                    Personal Manager</li>
+                                            </ul>
+                                            <ul class="inclusive__acc acc-sec">
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/header/star.png" alt="">
+                                                    Digital Marketing</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/header/star.png" alt="">
+                                                    Online & Offline Advertising</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/header/star.png" alt="">
+                                                    Graphic Design</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/header/star.png" alt="">
+                                                    Weekly Analytics and Reporting</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/header/star.png" alt="">
+                                                    Pause or Cancel Anytime</li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="inclusive__box-price">
                                     <h2 class="inclusive__price-sale">12% off</h2>
@@ -369,8 +564,8 @@
                                 </div>
                             </div>
                             <div class="inclusive__btn-box">
-                                <button class="inclusive__btn price-btns button">Need a discount?</button>
-                                <button class="inclusive__btns button retur" href="#">Return to monthly subscription</button>
+                                <button class="inclusive__btns button retur" href="#commerce" onclick="busfirstPrice()">Return to monthly subscription</button>
+                                <button class="inclusive__btn price-btns button" href="#com__disc-second" onclick="businesPrice()">Need an additional discount?</button>
                             </div>
                         </div>
                         <div class="inclusive__box box-sex" id="bus__disc-second">
@@ -382,7 +577,7 @@
                                 <div class="inclusive__box-content">
                                     <div class="inclusive__heading">
                                         <h2 class="inclusive__heading-title">All Inclusive in E-Commerce Package</h2>
-                                        <p class="inclusive__heading-text">The Business Package primarily caters to entrepreneurs and businesses in various industries, including startups, local businesses, and professional service providers. For those who seek to ensure a strong online and offline presence, attract their target audience and stimulate business growth through effective web development and marketing strategies.</p>
+                                        <p class="inclusive__heading-text">The e-commerce package is designed for businesses of any size who want to sell goods or services online and who need a comprehensive solution to create an efficient and secure online store, manage inventory, process orders, optimize conversion rates and develop their e-commerce business.</p>
                                     </div>
                                     <div class="inclusive__info">
                                         <ul class="inclusive__info-list">
@@ -420,6 +615,45 @@
                                                 Pause or Cancel Anytime</li>
                                         </ul>
                                     </div>
+                                    <div class="inclusive__info-acc">
+                                        <button class="inclusive__acc-btn btn" id="acc-btn-second">What's included?</button>
+                                        <div id="second-acc">
+                                            <ul class="inclusive__acc">
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/servi/sun.png" alt="">
+                                                    Strategy and Management</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/servi/sun.png" alt="">
+                                                    Website Design and Development</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/servi/sun.png" alt="">
+                                                    Software Development</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/servi/sun.png" alt="">
+                                                    CMS & SEO</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/servi/sun.png" alt="">
+                                                    Personal Manager</li>
+                                            </ul>
+                                            <ul class="inclusive__acc acc-sec">
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/header/star.png" alt="">
+                                                    Digital Marketing</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/header/star.png" alt="">
+                                                    Online & Offline Advertising</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/header/star.png" alt="">
+                                                    Graphic Design</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/header/star.png" alt="">
+                                                    Weekly Analytics and Reporting</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/header/star.png" alt="">
+                                                    Pause or Cancel Anytime</li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="inclusive__box-price">
                                     <h2 class="inclusive__price-sale">24% off</h2>
@@ -428,7 +662,7 @@
                                     <p class="inclusive__price-text">100% Satisfaction Guarantee</p>
                                 </div>
                             </div>
-                            <button class="inclusive__buttons button returns" href="#">Return to monthly subscription</button>
+                            <button class="inclusive__buttons button returns" href="#business" onclick="comfirstPrice()">Return to monthly subscription</button>
                         </div>
                         <div class="inclusive__box box-eight" id="com__disc-second">
                             <div class="inclusive__box-img">
@@ -477,6 +711,45 @@
                                                 Pause or Cancel Anytime</li>
                                         </ul>
                                     </div>
+                                    <div class="inclusive__info-acc">
+                                        <button class="inclusive__acc-btn btn" id="acc-btn-last">What's included?</button>
+                                        <div id="inclusive-acc-last">
+                                            <ul class="inclusive__acc">
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/servi/sun.png" alt="">
+                                                    Strategy and Management</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/servi/sun.png" alt="">
+                                                    Website Design and Development</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/servi/sun.png" alt="">
+                                                    Software Development</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/servi/sun.png" alt="">
+                                                    CMS & SEO</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/servi/sun.png" alt="">
+                                                    Personal Manager</li>
+                                            </ul>
+                                            <ul class="inclusive__acc acc-sec">
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/header/star.png" alt="">
+                                                    Digital Marketing</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/header/star.png" alt="">
+                                                    Online & Offline Advertising</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/header/star.png" alt="">
+                                                    Graphic Design</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/header/star.png" alt="">
+                                                    Weekly Analytics and Reporting</li>
+                                                <li class="inclusive__acc-item">
+                                                    <img src="images/header/star.png" alt="">
+                                                    Pause or Cancel Anytime</li>
+                                            </ul>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="inclusive__box-price">
                                     <h2 class="inclusive__price-sale">24% off</h2>
@@ -485,7 +758,7 @@
                                     <p class="inclusive__price-text">100% Satisfaction Guarantee</p>
                                 </div>
                             </div>
-                            <button class="inclusive__buttons button returs" href="#">Return to monthly subscription</button>
+                            <button class="inclusive__buttons button returs" href="#commerce" onclick="busfirstPrice()">Return to monthly subscription</button>
                         </div>
                     </div>
                 </div>
@@ -495,7 +768,7 @@
                     <div class="grow__inner">
                         <div class="grow__heading">
                             <h1 class="grow__heading-title">We Help You Grow Your Business Without Growing Your Team</h1>
-                            <p class="grow__heading-text">With Crokio, you can achieve significant cost savings compared to hiring your own team of 7 professionals (including web developer, marketing specialist, iOS developer, designer, project manager, UX/UI designer and content manager) with an average salary of $46,600 per month versus $1999 per month subscription. In addition, Crokio provides a wide range of tools and services for the effective implementation of online customer presence and marketing goals.</p>
+                            <p class="grow__heading-text">With Crokio, you can achieve significant cost savings compared to hiring your own team of 7 professionals (including web developer, marketing specialist, iOS developer, designer, project manager, UX/UI designer and content manager) with an average salary of <span id="price">$1999</span> per month versus <span id="prices">$1999</span> per month subscription. In addition, Crokio provides a wide range of tools and services for the effective implementation of online customer presence and marketing goals.</p>
                         </div>
                         <div class="grow__acc-box">
                             <ul class="grow__acc">
