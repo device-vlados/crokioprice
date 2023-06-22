@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body, html {
   font-family: "Roboto Mono", monospace;
   font-family: "Work Sans", sans-serif;
@@ -200,9 +201,6 @@ p {
 .header__top-logo {
   position: relative;
 }
-.header__top-logo:hover .logo-first {
-  opacity: 0;
-}
 .header__top-logo:hover .logo-second {
   opacity: 1;
 }
@@ -214,7 +212,6 @@ p {
   transform: translateY(-50%);
   width: 166px;
   height: 36px;
-  transition: all 0.5s;
 }
 .logo-first img {
   width: 166px;
@@ -229,7 +226,6 @@ p {
   width: 166px;
   height: 36px;
   opacity: 0;
-  transition: all 0.5s;
 }
 .logo-second img {
   width: 166px;
@@ -2289,6 +2285,213 @@ p {
   margin-bottom: 0px;
 }
 
+.table-container {
+  width: 100%; /* Укажите желаемую высоту контейнера */
+  overflow-x: auto;
+}
+
+.table-cont {
+  padding: 0 0 110px 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 1900px;
+}
+
+table th, td {
+  border-radius: 6px;
+  padding: 8px;
+}
+
+td {
+  background-color: #8077e4;
+  margin: 5px 5px 5px 5px;
+  border-radius: 6px;
+}
+
+th {
+  background-color: #f2f2f2;
+  text-align: left;
+}
+
+.name-col {
+  margin-right: 5px;
+}
+
+.orange-tooltip {
+  background-color: #ff7434;
+  color: #fff;
+}
+
+.orangesec-tooltip {
+  background-color: #FF5100;
+  color: #fff;
+}
+
+.purple-tooltip {
+  background-color: #a23ceb;
+  color: #fff;
+}
+
+.purplesec-tooltip {
+  background-color: #5F00A2;
+  color: #fff;
+}
+
+.yellow-tooltip {
+  background-color: #e8fa5f;
+  color: #000;
+}
+
+.yellowsec-tooltip {
+  background-color: #E6FF28;
+  color: #000;
+}
+
+.black-tooltip {
+  background-color: #27282D;
+  color: #fff;
+}
+
+.blacksec-tooltip {
+  background-color: #4b4949;
+  color: #fff;
+}
+
+.over {
+  background-color: #fff;
+  padding: 2px;
+}
+
+.name-course {
+  width: 200px;
+  color: #fff;
+  font-weight: 700;
+  background-color: #FF5100;
+}
+
+.purple-course {
+  background-color: #5F00A2;
+  color: #fff;
+}
+
+.yellow-course {
+  background-color: #E6FF28;
+  color: #000;
+}
+
+.black-course {
+  background-color: #27282D;
+  color: #fff;
+}
+
+/* Стили для всплывающего текста */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: default;
+}
+
+.tooltip .text-down {
+  visibility: hidden;
+  width: 500px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 20;
+  bottom: -350%;
+  left: 0;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  cursor: default;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 500px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 20;
+  bottom: 125%;
+  left: 0;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  cursor: default;
+}
+
+.tooltip:hover .text-down {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 550px) {
+  table {
+    border-collapse: collapse;
+    width: 1300px;
+    height: 700px;
+  }
+  .name-course {
+    width: 120px;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  td {
+    margin: 8px 8px 8px 8px;
+    font-size: 13px;
+    padding: 10px;
+  }
+  .tooltip .text-down {
+    visibility: hidden;
+    width: 200px;
+    font-size: 11px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 20;
+    bottom: -350%;
+    left: 0;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    cursor: default;
+  }
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    font-size: 11px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 20;
+    bottom: 125%;
+    left: 0;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    cursor: default;
+  }
+}
 .main__build {
   padding: 0 0 110px 0;
 }
@@ -4132,7 +4335,6 @@ p {
   left: 0;
   width: 166px;
   height: 36px;
-  transition: all 0.5s;
 }
 .footer__logo-first img {
   width: 166px;
@@ -4145,7 +4347,6 @@ p {
   width: 166px;
   height: 36px;
   opacity: 0;
-  transition: all 0.5s;
 }
 .footer__logo-second img {
   width: 166px;

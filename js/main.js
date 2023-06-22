@@ -13,6 +13,30 @@
 
 // blocks[1].classList.add("active");
 // =======================================================================
+// var blocks = document.getElementsByClassName("card__box-item");
+
+// var activateBlock = function() {
+//     for (var j = 0; j < blocks.length; j++) {
+//         blocks[j].classList.remove("active");
+//     }
+//     this.classList.add("active");
+// };
+
+// var resetActiveBlock = function() {
+//     for (var j = 0; j < blocks.length; j++) {
+//         blocks[j].classList.remove("active");
+//     }
+//     blocks[1].classList.add("active");
+// };
+
+// for (var i = 0; i < blocks.length; i++) {
+//     blocks[i].addEventListener("mouseenter", activateBlock);
+//     blocks[i].addEventListener("click", activateBlock);
+//     blocks[i].addEventListener("mouseleave", resetActiveBlock);
+// }
+
+// blocks[1].classList.add("active");
+// =======================================================================
 var blocks = document.getElementsByClassName("card__box-item");
 
 var activateBlock = function() {

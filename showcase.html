@@ -14,44 +14,6 @@
     <link rel="stylesheet" href="css/main.css">
     <title>Document</title>
 </head>
-<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-        google.charts.load('current', {'packages':['timeline']});
-        google.charts.setOnLoadCallback(drawChart);
-        var desc = document.getElementsByClassName("desc");
-
-        function drawChart() {
-            var container = document.getElementById('timeline-tooltip');
-            var chart = new google.visualization.Timeline(container);
-            var dataTable = new google.visualization.DataTable();
-
-            dataTable.addColumn({ type: 'string', id: 'President' });
-            dataTable.addColumn({ type: 'string', id: 'dummy bar label' });
-            dataTable.addColumn({ type: 'string', role: 'tooltip' });
-            dataTable.addColumn({ type: 'date', id: 'Start' });
-            dataTable.addColumn({ type: 'date', id: 'End' });
-            dataTable.addRows([
-                [ 'Marketing', 'BRANDING DEVELOPMENT: Developing a brands identity, positioning, and messaging through market research, strategy development, and visual design', null, new Date(2023, 6, 16), new Date(2023, 6, 29) ],
-                [ 'Marketing', 'FACEBOOK, INSTAGRAM PAGES - CONTENT CREATION: Creating engaging and visually appealing content for Facebook and Instagram pages to attract and engage the target audience, promote brand awareness, and drive user interaction', null, new Date(2023, 6, 29), new Date(2023, 7, 23) ],
-                [ 'Marketing', 'ANALITICS AND REPORTING: Analyzing marketing data, generating reports, and providing insights to measure the effectiveness of marketing campaigns, identify trends, and make data-driven decisions for optimizing future strategies.', null, new Date(2023, 7, 23), new Date(2023, 8, 3) ],
-                [ 'Marketing', 'YOUTUBE CONTENT CREATION: Producing high-quality video content for YouTube channels, including scripting, filming, editing, and optimizing videos to engage the audience and drive viewership and subscriber growth.', null, new Date(2023, 8, 3), new Date(2023, 8, 23) ],
-                [ 'Marketing', 'COMPANY CATALOG - CONTENT CREATION: Creating engaging and visually appealing content for Facebook and Instagram pages to attract and engage the target audience, promote brand awareness, and drive user interaction.', null, new Date(2023, 8, 23), new Date(2023, 9, 20) ],
-                [ 'Marketing', 'YOUTUBE CONTENT CREATION: Producing high-quality video content for YouTube channels, including scripting, filming, editing, and optimizing videos to engage the audience and drive viewership and subscriber growth.', null, new Date(2023, 9, 20), new Date(2023, 10, 17) ],
-                [ 'Marketing', 'MARKETING STRATEGY RESEARCH: Conducting comprehensive research on target markets, industry trends, consumer behavior, and competitor analysis to develop effective marketing strategies that align with business objectives and drive success.', null, new Date(2023, 6, 2), new Date(2023, 6, 22) ],
-                [ 'Marketing', 'CAMPAIGN DEVELOPMENT: Planning and executing marketing campaigns by defining campaign objectives, target audience, messaging, selecting appropriate channels, and coordinating various campaign elements to achieve desired outcomes and generate measurable results.', null, new Date(2023, 6, 22), new Date(2023, 7, 26) ],
-                [ 'Marketing', 'DIGITAL & OFFLINE ADVERTISING PLANNING: Developing comprehensive advertising plans that encompass both digital and offline channels, including identifying target audiences, selecting appropriate advertising platforms, creating engaging ad content, and optimizing campaigns to maximize reach and impact.', null, new Date(2023, 7, 26), new Date(2023, 8, 16) ],
-                [ 'Marketing', 'PROMO VIDEO CONTENT CREATION: Creating engaging and visually appealing content for Facebook and Instagram pages to attract and engage the target audience, promote brand awareness, and drive user interaction.', null, new Date(2023, 8, 16), new Date(2023, 9, 14) ],
-                [ 'Marketing', 'GOOGLE MAPS & YELLOW PAGES SETUP: Setting up and optimizing business profiles on Google Maps and Yellow Pages platforms, including accurate listing information, business descriptions, contact details, and relevant keywords, to enhance online visibility and improve local search engine rankings.', null, new Date(2023, 9, 14), new Date(2023, 9, 28) ],
-                [ 'Marketing', 'COMPANY CATALOG - CONTENT CREATION: Creating compelling and informative content for a company catalog, including product descriptions, images, pricing details, and specifications, to effectively showcase the companies offerings and attract potential customers.', null, new Date(2023, 9, 28), new Date(2023, 10, 18) ],
-                [ 'Web Development', 'WEBSITES - UX/UI DESIGN: Designing the user experience (UX) and user interface (UI) of a website by creating intuitive navigation, visually appealing layouts, interactive elements, and seamless interactions to enhance usability and provide an engaging and satisfying experience for website visitors.', null, new Date(2023, 6, 22),  new Date(2023, 7, 11) ],
-                [ 'Web Development', 'WEB DESIGN: Designing visually appealing and functional websites by creating layouts, selecting color schemes, choosing typography, and incorporating graphics and multimedia elements to ensure an aesthetically pleasing and user-friendly online presence.', null, new Date(2023, 7, 11),  new Date(2023, 8, 11) ],
-                [ 'Jefferson', 'Producing high-quality video content for YouTube channels, including scripting,', null, new Date(2023, 6, 23),  new Date(2023, 11, 3) ]]);
-                var options = {
-                };
-
-                chart.draw(dataTable);
-        }
-    </script>
 <body>
     <div class="wrapper">
         <header class="header panel" data-color="white">
@@ -117,7 +79,309 @@
             </section>
             <section class="main__table">
                 <div class="container">
-                    <div id="timeline-tooltip" style="height: 300px; width: 100%; overflow-x: scroll;"></div>
+                    <div class="table-cont">
+                        <div class="table-container">
+                            <table>
+                                <tr>
+                                    <th>Sphere</th>
+                                    <th>Courses</th>
+                                </tr>
+                                <tr>
+                                    <td class="over"></td>
+                                </tr>
+                                <tr>
+                                    <td class="name-course">Marketing</td>
+                                    <td class="tooltip orangesec-tooltip">Branding Developmnet
+                                    <span class="text-down">Date:07/16 - 07/29 July
+                                        <br>
+                                        <br>Developing a brand's identity, positioning, and messaging through market research, strategy development, and visual design.
+                                    </span>
+                                    </td>
+                                    <td class="tooltip orange-tooltip">Facebook, Instagram Pages - Content Creation
+                                    <span class="text-down">Date:07/30 - 08/22 July-August
+                                        <br>
+                                        <br>Creating engaging and visually appealing content for Facebook and Instagram pages to attract and engage the target audience, promote brand awareness, and drive user interaction.
+                                    </span>
+                                    </td>
+                                    <td class="tooltip orangesec-tooltip">Analytics and Reporting
+                                    <span class="text-down">Date:08/23 - 09/02 August-September
+                                        <br>
+                                        <br>Analyzing marketing data, generating reports, and providing insights to measure the effectiveness of marketing campaigns, identify trends, and make data-driven decisions for optimizing future strategies.
+                                    </span>
+                                    </td>
+                                    <td class="tooltip orange-tooltip">YouTube Content Creation
+                                    <span class="text-down">Date:09/03 - 09/22 September
+                                        <br>
+                                        <br>Producing high-quality video content for YouTube channels, including scripting, filming, editing, and optimizing videos to engage the audience and drive viewership and subscriber growth.
+                                    </span>
+                                    </td>
+                                    <td class="tooltip orangesec-tooltip">Company Catalog - Content Creation
+                                    <span class="text-down">Date:09/23 - 10/20 September-October
+                                        <br>
+                                        <br>Creating visually appealing and informative content for company catalogs, including product descriptions, images, and specifications, to showcase the range of offerings and attract potential customers.
+                                    </span>
+                                    </td>
+                                    <td class="tooltip orange-tooltip">Analytics and Reporting
+                                    <span class="text-down">Date:10/21 - 10/28 October
+                                        <br>
+                                        <br>Analyzing marketing data, generating reports, and providing insights to measure the effectiveness of marketing campaigns, identify trends, and make data-driven decisions for optimizing future strategies.
+                                    </span>
+                                    </td>
+                                    <td class="tooltip orangesec-tooltip">Campaign Execution and Optimization
+                                    <span class="text-down">Date:08/23 - 09/02 October-November
+                                        <br>
+                                        <br>Developing a brand's identity, positioning, and messaging through market research, strategy development, and visual design.
+                                    </span>
+                                    </td>
+                                    <td class="tooltip orange-tooltip">Marketing Strategy Research
+                                    <span class="text-down">Date:07/02 - 07/21 July
+                                        <br>
+                                        <br>Conducting comprehensive research on target markets, industry trends, consumer behavior, and competitor analysis to develop effective marketing strategies that align with business objectives and drive success.
+                                    </span>
+                                    </td>
+                                    <td class="tooltip orangesec-tooltip">Campaign Development
+                                    <span class="text-down">Date:07/22 - 08/26 July-August
+                                        <br>
+                                        <br>Planning and executing marketing campaigns by defining campaign objectives, target audience, messaging, selecting appropriate channels, and coordinating various campaign elements to achieve desired outcomes and generate measurable results.
+                                    </span>
+                                    </td>
+                                    <td class="tooltip orange-tooltip">Digital & Offline Advertising Planning
+                                    <span class="text-down">Date:08/27 - 09/16 August-September
+                                        <br>
+                                        <br>Developing comprehensive advertising plans that encompass both digital and offline channels, including identifying target audiences, selecting appropriate advertising platforms, creating engaging ad content, and optimizing campaigns to maximize reach and impact.
+                                    </span>
+                                    </td>
+                                    <td class="tooltip orangesec-tooltip">Promo Video Content Creation
+                                    <span class="text-down">Date:09/16 - 10/14 September-October
+                                        <br>
+                                        <br>Creating engaging and visually appealing content for Facebook and Instagram pages to attract and engage the target audience, promote brand awareness, and drive user interaction.
+                                    </span>
+                                    </td>
+                                    <td class="tooltip orange-tooltip">Google Maps & Yellow Pages Setup
+                                    <span class="text-down">Date:10/14 - 10/28 October
+                                        <br>
+                                        <br>Setting up and optimizing business profiles on Google Maps and Yellow Pages platforms, including accurate listing information, business descriptions, contact details, and relevant keywords, to enhance online visibility and improve local search engine rankings.
+                                    </span>
+                                    </td>
+                                    <td class="tooltip orangesec-tooltip">Google Maps & Yellow Pages Setup
+                                    <span class="text-down">Date:10/29 - 11/18 October-November
+                                        <br>
+                                        <br>Creating compelling and informative content for a company catalog, including product descriptions, images, pricing details, and specifications, to effectively showcase the company's offerings and attract potential customers.
+                                    </span>
+                                    </td>
+                                    <td class="tooltip orange-tooltip">Website Planning and Requirements Gathering
+                                    <span class="text-down">Date:07/09 - 07/29 July
+                                        <br>
+                                        <br>Conducting thorough analysis and gathering client requirements to plan and outline the structure, features, functionality, and content strategy for a website, ensuring it meets the client's objectives and user needs.
+                                    </span>
+                                    </td>
+                                    <td class="tooltip orangesec-tooltip">Website Content Creation
+                                    <span class="text-down">Date:07/30 - 09/02 July-September
+                                        <br>
+                                        <br>Planning and executing marketing campaigns by defining campaign objectives, target audience, messaging, selecting appropriate channels, and coordinating various campaign elements to achieve desired outcomes and generate measurable results.
+                                    </span>
+                                    </td>
+                                    <td class="tooltip orange-tooltip">Mobile App Planning and Requirements Gathering
+                                    <span class="text-down">Date:09/02 - 09/23 September
+                                        <br>
+                                        <br>Conducting comprehensive analysis and gathering client requirements to plan and outline the features, functionality, user interface, and user experience of a mobile app, ensuring it aligns with the client's objectives and meets the needs of the target audience.
+                                    </span>
+                                    </td>
+                                    <td class="tooltip orangesec-tooltip">Mobile App Content Creation
+                                    <span class="text-down">Date:09/24 - 11/18 September-November
+                                        <br>
+                                        <br>Creating engaging and user-friendly content, including text, images, videos, and interactive elements, for a mobile app that effectively communicates information, guides users, and enhances their overall experience, aligning with the app's purpose and target audience.
+                                    </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="over"></td>
+                                </tr>
+                                <tr>
+                                    <td class="name-course purple-course">Web-Development</td>
+                                    <td class="tooltip purple-tooltip">Website - UX/UI Design
+                                    <span class="tooltiptext">Date:07/23 - 08/12 July-August
+                                        <br>
+                                        <br>Designing the user experience (UX) and user interface (UI) of a website by creating intuitive navigation, visually appealing layouts, interactive elements, and seamless interactions to enhance usability and provide an engaging and satisfying experience for website visitors.</span>
+                                    </td>
+                                    <td class="tooltip purplesec-tooltip">Web Design
+                                    <span class="tooltiptext">Date:08/12 - 08/26 August
+                                        <br>
+                                        <br>Designing visually appealing and functional websites by creating layouts, selecting color schemes, choosing typography, and incorporating graphics and multimedia elements to ensure an aesthetically pleasing and user-friendly online presence.</span>
+                                    </td>
+                                    <td class="tooltip purple-tooltip">Back-end and Front-end Development
+                                    <span class="tooltiptext">Date:08/13 - 09/23 August-September
+                                        <br>
+                                        <br>Your annotation here...
+                                        Back-end website development involves building the server-side functionality, while front-end development focuses on creating the user interface and client-side functionality.
+                                    </span>
+                                    </td>
+                                    <td class="tooltip purplesec-tooltip">Testing, Release
+                                    <span class="tooltiptext">Date:09/24 - 10/01 September-October
+                                        <br>
+                                        <br>Testing and release involve conducting comprehensive quality assurance tests to identify and resolve any issues or bugs in a website or application before it is officially launched to ensure a smooth and error-free user experience. Once testing is complete, the product is released to the intended audience.</span>
+                                    </td>
+                                    <td class="tooltip purple-tooltip">Website Deployment and Maintenance
+                                    <span class="tooltiptext">Date:10/02 - 11/18 October-November
+                                        <br>
+                                        <br>Website deployment is the process of making a website live, while website maintenance involves ongoing updates and management to ensure its optimal performance and security.</span>
+                                    </td>
+                                    <td class="tooltip purplesec-tooltip">E-mail list Development
+                                    <span class="tooltiptext">Date:08/06 - 08/19 August
+                                        <br>
+                                        <br>E-mail advertising involves sending targeted promotional messages to a list of subscribers via email to drive conversions, build brand awareness, and foster customer relationships.</span>
+                                    </td>
+                                    <td class="tooltip purple-tooltip">Mobile app - UX/UI Design
+                                    <span class="tooltiptext">Date:09/10 - 10/08 September-October
+                                        <br>
+                                        <br>Mobile app UX/UI design involves creating a visually appealing and user-friendly interface for a mobile application, focusing on intuitive navigation, engaging interactions, and optimizing the overall user experience.</span>
+                                    </td>
+                                    <td class="tooltip purplesec-tooltip">Mobile app Design
+                                    <span class="tooltiptext">Date:10/09 - 11/04 October-November
+                                        <br>
+                                        <br>Mobile app design encompasses the entire process of creating an engaging and user-friendly interface for a mobile application, which includes wireframing, prototyping, visual design, and interaction design to deliver a visually appealing and intuitive user experience.</span>
+                                    </td>
+                                    <td class="tooltip purple-tooltip">Mobile app Development
+                                    <span class="tooltiptext">Date:11/04 - 11/18 November
+                                        <br>
+                                        <br>Mobile app development is the process of creating software applications specifically designed to run on mobile devices, such as smartphones or tablets. It involves various stages, including ideation, design, coding, testing, and deployment, to create functional and user-friendly mobile applications for platforms like iOS and Android.</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="over"></td>
+                                </tr>
+                                <tr>
+                                    <td class="name-course yellow-course">Design</td>
+                                    <td class="tooltip yellowsec-tooltip">Business identity design
+                                        <span class="tooltiptext">Date:07/16 - 08/05 July-August
+                                            <br>
+                                            <br>Business identity design is the process of creating a visual representation of a company's brand, including its logo and other visual elements, to establish a recognizable and cohesive brand identity.</span>
+                                    </td>
+                                    <td class="tooltip yellow-tooltip">Social media graphics
+                                        <span class="tooltiptext">Date:08/06 - 08/24 August
+                                            <br>
+                                            <br>Social media graphics are visual content designed for sharing on social media platforms to attract engagement, increase brand visibility, and effectively communicate messages to the target audience.</span>
+                                    </td>
+                                    <td class="tooltip yellowsec-tooltip">Promotional merchandise Design
+                                        <span class="tooltiptext">Date:08/24 - 09/15 August-September
+                                            <br>
+                                            <br>Promotional merchandise design is the process of creating visually appealing and branded items that are used for promotional purposes, incorporating the company's logo and messaging to effectively promote the business or event.</span>
+                                    </td>
+                                    <td class="tooltip yellow-tooltip">Social media graphics
+                                        <span class="tooltiptext">Date:09/15 - 09/28 September
+                                            <br>
+                                            <br>Social media graphics are visual content designed for sharing on social media platforms to attract engagement, increase brand visibility, and effectively communicate messages to the target audience.</span>
+                                    </td>
+                                    <td class="tooltip yellowsec-tooltip">Product Catalog Design
+                                        <span class="tooltiptext">Date:10/07 - 11/04 October-November
+                                            <br>
+                                            <br>Product catalog design involves creating visually engaging and informative layouts that effectively showcase a company's products or services, highlighting their features and benefits to entice customers and drive sales.</span>
+                                    </td>
+                                    <td class="tooltip yellow-tooltip">Social media graphics
+                                        <span class="tooltiptext">Date:11/04 - 11/18 October-November
+                                            <br>
+                                            <br>Social media graphics are visual content designed for sharing on social media platforms to attract engagement, increase brand visibility, and effectively communicate messages to the target audience.</span>
+                                    </td>
+                                    <td class="tooltip yellowsec-tooltip">E-mail Ads Design
+                                        <span class="tooltiptext">Date:08/06 - 08/19 August
+                                            <br>
+                                            <br>Create an attention-grabbing and persuasive email ad that showcases the benefits of your product/service, compelling the customer to take action and make a purchase.</span>
+                                    </td>
+                                    <td class="tooltip yellow-tooltip">Custom Design - Animations and Illustrations for Website
+                                        <span class="tooltiptext">Date:08/20 - 09/16 August-September
+                                            <br>
+                                            <br>Create engaging and visually captivating custom animations and illustrations tailored to your brand's style and website's needs, enhancing user experience and effectively conveying information or messages.</span>
+                                    </td>
+                                    <td class="tooltip yellowsec-tooltip">Custom Design - Animations and Illustrations for Mobile App
+                                        <span class="tooltiptext">Date:09/15 - 10/20 September-October
+                                            <br>
+                                            <br>Craft unique and eye-catching animations and illustrations customized for your mobile app, enhancing its visual appeal, user experience, and effectively conveying information or guiding user interactions.</span>
+                                    </td>
+                                    <td class="tooltip yellow-tooltip">Company Presentation Design
+                                        <span class="tooltiptext">Date:10/21 - 11/18 October-November
+                                            <br>
+                                            <br>Create a visually compelling and professionally designed company presentation that effectively communicates your brand's story, key messages, and engages the audience, leaving a lasting impression.</span>
+                                    </td>
+                                    <td class="tooltip yellowsec-tooltip">Advertising Design Google, Banners
+                                        <span class="tooltiptext">Date:08/20 - 09/09 August-September
+                                            <br>
+                                            <br>Design eye-catching and impactful advertising banners for Google display network, tailored to your target audience and campaign goals, to drive clicks, conversions, and brand awareness.</span>
+                                    </td>
+                                    <td class="tooltip yellow-tooltip">Company custom stickers and labels
+                                        <span class="tooltiptext">Date:09/10 - 09/23 September
+                                            <br>
+                                            <br>Create unique and customized stickers and labels for your company, incorporating your branding elements and design preferences, to enhance your product packaging, marketing materials, or promotional items.</span>
+                                    </td>
+                                    <td class="tooltip yellowsec-tooltip">Video Animations and Processing
+                                        <span class="tooltiptext">Date:09/23 - 10/12 September-October
+                                            <br>
+                                            <br>Produce engaging and visually appealing video animations with professional processing techniques, enhancing your videos with special effects, transitions, and editing to captivate your audience.</span>
+                                    </td>
+                                    <td class="tooltip yellow-tooltip">Packaging design
+                                        <span class="tooltiptext">Date:10/12 - 11/04 October-November
+                                            <br>
+                                            <br>Design visually appealing and impactful packaging that effectively showcases your product, captures attention on store shelves, and communicates your brand's identity and values to potential customers.</span>
+                                    </td>
+                                    <td class="tooltip yellowsec-tooltip">Exhibition stand Design
+                                        <span class="tooltiptext">Date:11/05 - 11/18 November
+                                            <br>
+                                            <br>Create a captivating and innovative exhibition stand design that showcases your brand, products, and messaging, engaging visitors and leaving a lasting impression at trade shows or events.</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="over"></td>
+                                </tr>
+                                <tr>
+                                    <td class="name-course black-course">Advertising</td>
+                                    <td class="tooltip blacksec-tooltip">Google Advertising Setup
+                                        <span class="tooltiptext">Date:08/20 - 09/09 August-September
+                                            <br>
+                                            <br>Set up effective Google advertising campaigns by conducting keyword research, creating compelling ad copy, optimizing targeting settings, and configuring conversion tracking, to drive relevant traffic and maximize return on investment.</span>
+                                    </td>
+                                    <td class="tooltip black-tooltip">Performance Analysis and Reporting
+                                        <span class="tooltiptext">Date:09/10 - 10/14 September-October
+                                            <br>
+                                            <br>Conduct comprehensive performance analysis and reporting for your advertising campaigns, utilizing key metrics and insights to evaluate the effectiveness, identify areas for improvement, and provide actionable recommendations for optimizing campaign performance and ROI.</span>
+                                    </td>
+                                    <td class="tooltip blacksec-tooltip">Instagram, FB Advertising Setup
+                                        <span class="tooltiptext">Date:10/15 - 11/04 September-October
+                                            <br>
+                                            <br>Efficiently set up Instagram and Facebook advertising campaigns by creating compelling ad creatives, defining precise targeting parameters, and optimizing bidding strategies to reach your desired audience and achieve campaign objectives.</span>
+                                    </td>
+                                    <td class="tooltip black-tooltip">Performance Analysis and Reporting
+                                        <span class="tooltiptext">Date:11/04 - 11/18 November
+                                            <br>
+                                            <br>Conduct comprehensive performance analysis and reporting for your advertising campaigns, utilizing key metrics and insights to evaluate the effectiveness, identify areas for improvement, and provide actionable recommendations for optimizing campaign performance and ROI.</span>
+                                    </td>
+                                    <td class="tooltip blacksec-tooltip">E-mail Advertising Setup and Realization
+                                        <span class="tooltiptext">Date:07/30 - 08/19 July-August
+                                            <br>
+                                            <br>Effectively set up and execute email advertising campaigns by creating compelling content, designing visually appealing templates, segmenting the audience, and implementing tracking mechanisms to maximize engagement and conversions.</span>
+                                    </td>
+                                    <td class="tooltip black-tooltip">Direct Mail Advertising Setup and Realization
+                                        <span class="tooltiptext">Date:08/20 - 09/16 August-September
+                                            <br>
+                                            <br>Proficiently set up and execute direct mail advertising campaigns by developing impactful designs, targeting the right audience, coordinating printing and mailing logistics, and tracking campaign performance to generate effective offline marketing results.</span>
+                                    </td>
+                                    <td class="tooltip blacksec-tooltip">Local Sport Event Advertising
+                                        <span class="tooltiptext">Date:09/16 - 10/07 September-October
+                                            <br>
+                                            <br>Create targeted and engaging local sport event advertising campaigns that effectively promote the event, reach the desired audience, and generate excitement and participation through strategic placement and compelling messaging.</span>
+                                    </td>
+                                    <td class="tooltip black-tooltip">Loyalty program with special discounts
+                                        <span class="tooltiptext">Date:10/07 - 10/28 October
+                                            <br>
+                                            <br>Develop a comprehensive loyalty program with exclusive discounts and rewards, tailored to incentivize customer loyalty, encourage repeat purchases, and foster long-term relationships with your brand.</span>
+                                    </td>
+                                    <td class="tooltip blacksec-tooltip">Postcards Advertising Setup
+                                        <span class="tooltiptext">Date:10/28 - 11/18 October-November
+                                            <br>
+                                            <br>Efficiently set up postcard advertising campaigns by designing visually appealing postcards, defining targeted mailing lists, coordinating printing and distribution, and tracking response rates to effectively promote your business or offers.</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
