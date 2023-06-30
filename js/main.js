@@ -446,3 +446,8 @@ $(function () {
         $('body,html').animate({ scrollTop: top }, 800)
     });
 });
+function busfirstPrice() {
+    var area = document.querySelector('.price-btns'); // Замените '.area' на соответствующий селектор для вашей области
+
+    area.classList.add('hidden'); // Добавляем класс 'hidden' для скрытия области
+}
