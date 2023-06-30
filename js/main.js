@@ -438,11 +438,14 @@ $(function () {
     });
     // --------------------------------------------------------------------------------------
     $(".price-btns, .inclusive__btns, .inclusive__btn, .insclusive__button, .returns, .returs").on("click", function (e) {
-        e.preventDefault()
         var id = $(this).attr('href');
         var targetElement = $(id);
         var padding = 140;
         var top = targetElement.offset().top - padding;
-        $('body,html').animate({ scrollTop: top }, 900)
+        $('body,html').animate({ scrollTop: top }, 900);
+    
+        // Удалить вызов e.preventDefault()
+        return false;
     });
+    
 });
