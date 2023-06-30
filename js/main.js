@@ -1,41 +1,3 @@
-// var blocks = document.getElementsByClassName("card__box-item");
-
-// for (var i = 0; i < blocks.length; i++) {
-//     blocks[i].addEventListener("click", function() {
-
-//     for (var j = 0; j < blocks.length; j++) {
-//         blocks[j].classList.remove("active");
-//     }
-
-//     this.classList.add("active");
-//     });
-// }
-
-// blocks[1].classList.add("active");
-// =======================================================================
-// var blocks = document.getElementsByClassName("card__box-item");
-
-// var activateBlock = function() {
-//     for (var j = 0; j < blocks.length; j++) {
-//         blocks[j].classList.remove("active");
-//     }
-//     this.classList.add("active");
-// };
-
-// var resetActiveBlock = function() {
-//     for (var j = 0; j < blocks.length; j++) {
-//         blocks[j].classList.remove("active");
-//     }
-//     blocks[1].classList.add("active");
-// };
-
-// for (var i = 0; i < blocks.length; i++) {
-//     blocks[i].addEventListener("mouseenter", activateBlock);
-//     blocks[i].addEventListener("click", activateBlock);
-//     blocks[i].addEventListener("mouseleave", resetActiveBlock);
-// }
-
-// blocks[1].classList.add("active");
 // =======================================================================
 const animItems = document.querySelectorAll('.anim-items');
 
@@ -96,90 +58,6 @@ hover.forEach((hov, index) =>{
     });
 });
 
-// =-=-----------------------------TEXT-FORMULA--------------------------------------
-// const bus = 6;
-// const buss = 12;
-// const busi = 1999;
-// const com = 2999;
-
-// const business = 10499;
-// const busines = 18199;
-// const commerc = 15899;
-// const commer = 27499;
-// // ---------------------------COMMERCE---------------------------------
-// function comfirstPrice() {
-//     var priceElement = document.getElementById("price");
-//     var priceElement2 = document.getElementById("prices");
-
-//     var multipliedPrice = busi * 1;
-//     var multipliedPrice2 = busi * 1;
-
-//     priceElement.textContent = "$" + multipliedPrice.toFixed(0);
-//     priceElement2.textContent = "$" + multipliedPrice2.toFixed(0);
-// };
-// function comPrice() {
-//     var priceElement = document.getElementById("price");
-//     var priceElement2 = document.getElementById("prices");
-
-//     var multipliedPrice = commerc * bus;
-//     var multipliedPrice2 = commerc * 1;
-
-//     priceElement.textContent = "$" + multipliedPrice.toFixed(0);
-//     priceElement2.textContent = "$" + multipliedPrice2.toFixed(0);
-// };
-// function comsPrice() {
-//     var priceElement = document.getElementById("price");
-//     var priceElement2 = document.getElementById("prices");
-
-//     var multipliedPrice = commer * buss;
-//     var multipliedPrice2 = commer * 1;
-
-//     priceElement.textContent = "$" + multipliedPrice.toFixed(0);
-//     priceElement2.textContent = "$" + multipliedPrice2.toFixed(0);
-// };
-// // ---------------------------BUSINESS---------------------------------
-// function busfirstPrice() {
-//     var priceElement = document.getElementById("price");
-//     var priceElement2 = document.getElementById("prices");
-
-//     var multipliedPrice = com * 1;
-//     var multipliedPrice2 = com * 1;
-
-//     priceElement.textContent = "$" + multipliedPrice.toFixed(0);
-//     priceElement2.textContent = "$" + multipliedPrice2.toFixed(0);
-// };
-// function businessPrice() {
-//     var priceElement = document.getElementById("price");
-//     var priceElement2 = document.getElementById("prices");
-
-//     var multipliedPrice = business * bus;
-//     var multipliedPrice2 = business * 1;
-
-//     priceElement.textContent = "$" + multipliedPrice.toFixed(0);
-//     priceElement2.textContent = "$" + multipliedPrice2.toFixed(0);
-// };
-// function businesPrice() {
-//     var priceElement = document.getElementById("price");
-//     var priceElement2 = document.getElementById("prices");
-
-//     var multipliedPrice = busines * buss;
-//     var multipliedPrice2 = busines * 1;
-
-//     priceElement.textContent = "$" + multipliedPrice.toFixed(0);
-//     priceElement2.textContent = "$" + multipliedPrice2.toFixed(0);
-// };
-// // ---------------------------CUSTOM---------------------------------
-// function customPrice() {
-//     var priceElement = document.getElementById("price");
-//     var priceElement2 = document.getElementById("prices");
-
-//     var multipliedPrice = "$custom";
-//     var multipliedPrice2 = "$custom";
-
-//     priceElement.textContent = multipliedPrice;
-//     priceElement2.textContent = multipliedPrice2;
-// };
-// ===============================================================
 var b = document.querySelectorAll('.bt');
 var divs = document.querySelectorAll('.inclusive__box');
 
@@ -442,9 +320,8 @@ $(function () {
         var targetElement = $(id);
         var padding = 140;
         var top = targetElement.offset().top - padding;
-        $('body,html').animate({ scrollTop: top }, 900);
+        $('body,html').animate({ scrollTop: top }, 500);
     
-        // Удалить вызов e.preventDefault()
         return false;
     });
     
