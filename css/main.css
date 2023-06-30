@@ -3835,9 +3835,11 @@ p {
   min-width: 280px;
   height: 100vh;
   overflow: hidden;
+  margin-top: 100px;
 }
 
 .meet__calendar {
+  overflow: hidden;
   position: relative;
 }
 .meet__calendar-img {
@@ -3856,6 +3858,24 @@ p {
   .calendly-inline-widget {
     min-width: 280px;
     height: 1100px;
+    overflow: hidden;
+  }
+}
+@media (max-width: 750px) {
+  .calendly-inline-widget {
+    margin: 0 auto;
+    padding: 140px 30px 0 30px;
+    max-width: 550px;
+    height: 1150px;
+    overflow: hidden;
+  }
+}
+@media (max-width: 420px) {
+  .calendly-inline-widget {
+    margin: 0 auto;
+    padding: 140px 30px 0 30px;
+    max-width: 550px;
+    height: 1160px;
     overflow: hidden;
   }
 }
