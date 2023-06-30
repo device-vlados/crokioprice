@@ -1607,6 +1607,7 @@ p {
     margin: 0 auto;
   }
   .inclusive__acc-btn {
+    color: #000;
     margin-bottom: 38px;
   }
   .acc-sec {
@@ -1707,6 +1708,9 @@ p {
   }
   .inclusive__acc-item {
     font-size: 13px;
+  }
+  .inclusive__box {
+    max-width: 320px;
   }
 }
 @media (max-width: 390px) {
@@ -3823,7 +3827,7 @@ p {
   }
 }
 .main__meet {
-  padding: 200px 0 110px 0;
+  padding: 160px 0 110px 0;
 }
 
 .meet__calendar {

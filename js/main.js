@@ -443,6 +443,6 @@ $(function () {
         var targetElement = $(id);
         var padding = 140;
         var top = targetElement.offset().top - padding;
-        $('body,html').animate({ scrollTop: top }, 800)
+        $('body,html').animate({ scrollTop: top }, 900)
     });
 });
