@@ -3830,6 +3830,12 @@ p {
   padding: 160px 0 110px 0;
 }
 
+.calendly-inline-widget {
+  min-width: 280px;
+  height: 100vh;
+  overflow: hidden;
+}
+
 .meet__calendar {
   position: relative;
 }
@@ -3845,6 +3851,13 @@ p {
   height: 43px;
 }
 
+@media (max-width: 1050px) {
+  .calendly-inline-widget {
+    min-width: 280px;
+    height: 1100px;
+    overflow: hidden;
+  }
+}
 .footer {
   padding: 64px 0 42px 0;
   background-color: #000;
