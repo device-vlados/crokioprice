@@ -16,6 +16,10 @@
 </head>
 <body>
     <div class="wrapper">
+        <div class="calendly" id="calendly">
+            <div class="calendly-inline-widget" data-url="https://calendly.com/crokio" id="modal"></div>
+            <span class="calendly-close">X</span>
+        </div>
         <header class="header panel" data-color="white">
             <div class="header__top">
                 <div class="container">
@@ -37,7 +41,7 @@
                                     <a class="header__nav-link" href="pricing.html">Pricing</a>
                                 </li>
                             </ul>
-                            <button class="header__nav-button button" onclick="document.location='call.html'">Book a Call</button>
+                            <button class="header__nav-button button call" href="#">Book a Call</button>
                         </div>
                     </div>
                 </div>
@@ -1119,7 +1123,7 @@
                                 <div class="footer__logo-second"><img src="images/logow1.png" alt=""></div>
                             </a>
                             <div class="footer__buttons-box">
-                                <button class="footer__button btn" onclick="document.location='call.html'">Book a Discovery Call</button>
+                                <button class="footer__button btn call" href="#">Book a Discovery Call</button>
                             </div>
                         </div>
                         <nav class="footer__nav">
@@ -1172,6 +1176,7 @@
         </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
 </body>
