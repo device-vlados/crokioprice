@@ -37,22 +37,17 @@
                                     <a class="header__nav-link" href="pricing.html">Pricing</a>
                                 </li>
                             </ul>
-                            <button class="header__nav-button button" onclick="document.location='call.html'">Book a Call</button>
+                            <button class="header__nav-button button" id="call-ope">Book a Call</button>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
         <main class="main">
-            <div class="calendly-inline-widget" data-url="https://calendly.com/crokio"></div>
-            <section class="main__meet">
-                <div class="container">
-                    <div class="meet__calendar">
-                        
-                        <div class="meet__calendar-img"><img src="images/servi/vid-ico.png" alt=""></div>
-                    </div>
-                </div>
-            </section>
+            <div class="calendly">
+                <div class="calendly-inline-widget" data-url="https://calendly.com/crokio" id="modal"></div>
+                <span class="calendly-close">X</span>
+            </div>
         </main>
         <footer class="footer">
             <img src="images/ico/fill.png" alt="" class="footer-ill">
